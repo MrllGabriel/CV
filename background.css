@@ -1,0 +1,84 @@
+/* Pour que la vidéo couvre tout l'écran */
+.background-video {
+    position: absolute;
+    object-fit: cover; /* Ajuste la vidéo pour qu'elle couvre tout l'écran sans déformation */
+    background-size: cover;
+    z-index: -1; /* Place la vidéo derrière le contenu */
+    position: fixed; /* Fixe la vidéo en arrière-plan */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    min-width: 100%; /* S'assure que la vidéo couvre tout l'écran */
+    min-height: 100%; /* S'assure que la vidéo couvre tout l'écran */
+    width: auto; /* Maintient le ratio de la vidéo */
+    height: auto; /* Maintient le ratio de la vidéo */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+    transform: translate(-50%, -50%); /* Centre la vidéo */
+}
+
+/* Style pour le contenu par-dessus la vidéo */
+.content {
+    position: relative;
+    z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+    color: #fff; /* Texte blanc pour qu'il soit lisible sur la vidéo */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em; /* Agrandit le texte pour plus de lisibilité */
+}
+
+/* Supprime les marges et empêche le défilement */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.image-haut-droite {
+    position: absolute;
+    top: 10px; /* Ajuste la position en haut */
+    right: 10px; /* Ajuste la position à droite */
+    width: 80px; /* Taille de l'image en largeur (ajustez selon vos besoins) */
+    height: auto; /* Conserve le ratio de l'image */
+}
+
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(22, 27, 34, 0.54); /* Couleur de fond avec transparence */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #58a6ff;
+    border-bottom: 1px solid #58a6ff;
+    padding-bottom: 5px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.info-item {
+    margin-bottom: 8px;
+}
+
+.info-item strong {
+    color: #3fb950;
+}
+
+.highlight {
+    color: #f78166;
+}
